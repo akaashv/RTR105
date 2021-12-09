@@ -9,7 +9,7 @@ printf("%.2f\t%8.2f\t%8.2f\n", x,a,S);
 
 while(k<500){
 	k++;
-	a = a*(k*(x*x)*(2*k-1))/(2*(k*k)*(2*k+1));
+	a = a*(k*(x*x)*(2*k-1)*(2*k-1))/(2*(k*k)*(2*k+1));
 	S = S + a;
 	printf("%.2f\t%8.2f\t%8.2f\n", x,a,S);
 	}
@@ -17,7 +17,10 @@ return S;
 }
 
 void main(){
-	double x=0.5, y, yy;
+	double x, y, yy;
+printf("note:x<1");
+printf("enter the x-value:");
+scanf("%lf", &x);
 	y= asin(x);
 	printf("standard function arcsin - y= arcsin(%.2f)=%.2f\n",x,y);
 	yy= my_arcsin(x);
