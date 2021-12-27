@@ -1,129 +1,37 @@
 #include <stdio.h>
+int main ()
+{
+  int a, b, c,i;
+  long long d,e;
+  a = 1;
+  e=1;
+  b = 1;
+  printf ("please enter the type of datatype that you are entering \n");
+  printf ("please enter 1 for int datatype  \n");
+  printf ("please enter 2 for char datatype  \n");
+  printf ("please enter 3 for long long datatype  \n");
+  scanf ("%d", &c);
+  
+    if(c==2){
+      printf("Sorry The factorial is not possible");
+      return 0;
+    }
+    else if(c==1){
+      printf ("please enter the number \n");
+      scanf ("%d", &c);
+      for(i=1;i<=c;i++){
+        a=a*i;
+        }
+    printf("The Factorial of %d is : %d",c,a);
+    }
+    else if(c==3){
+      printf ("please enter the number \n");
+      scanf ("%lld", &d);
+      for(i=1;i<=d;i++){
+        e=e*i;
+      }
+    printf("The Factorial of %lld is : %lld",d,e);
+    }
 
-//Mian program starts here
-int main()
-{
-//Creating an integer array of size 3
-int arr[3];
-int choice;
-  
-//Asking user for input
-printf("Enter 3 numbers : ");
-  
-for(int i = 0; i < 3; i++)
-{
-scanf("%d", &arr[i]);
-}
-  
-//Asking whether the user wants ascending or descending
-printf("Enter 1 for ascending, 2 for descending : ");
-scanf("%d", &choice);
-  
-//Sorting according to choice by the user
-if(choice == 1)
-{
-//Swapping if first element is greater than the second
-if(arr[0] > arr[1])
-{
-int temp = arr[1];
-arr[1] = arr[0];
-arr[0] = temp;
-}
-  
-//Swapping if second element is greater than the first
-if(arr[1] > arr[2])
-{
-int temp = arr[2];
-arr[2] = arr[1];
-arr[1] = temp;
-}
-}
-  
-else if(choice == 2)
-{
-//Swapping if first element is smaller than the second
-if(arr[0] < arr[1])
-{
-int temp = arr[1];
-arr[1] = arr[0];
-arr[0] = temp;
-}
-  
-//Swapping if second element is smaller than the first
-if(arr[1] < arr[2])
-{
-int temp = arr[2];
-arr[2] = arr[1];
-arr[1] = temp;
-}
-}
-  
-//printing the result
-for(int i = 0; i < 3; i++)
-{
-printf("%d\t", arr[i]);
-}
-  
-//Creating a character array of size 3
-char ch[3];
-
-//Asking user for input
-printf("\nEnter 3 characters : ");
-  
-for(int i = 0; i < 3; i++)
-{
-scanf(" %c", &ch[i]);
-}
-  
-//Asking whether the user wants ascending or descending
-printf("Enter 1 for ascending, 2 for descending : ");
-scanf("%d", &choice);
-  
-//Sorting according to choice by the user
-if(choice == 1)
-{
-//Swapping if first element is greater than the second
-if(ch[0] > ch[1])
-{
-char temp = ch[1];
-ch[1] = ch[0];
-ch[0] = temp;
-}
-  
-//Swapping if second element is greater than the first
-if(ch[1] > ch[2])
-{
-char temp = ch[2];
-ch[2] = ch[1];
-ch[1] = temp;
-}
-}
-  
-else if(choice == 2)
-{
-//Swapping if first element is smaller than the second
-if(ch[0] < ch[1])
-{
-char temp = ch[1];
-ch[1] = ch[0];
-ch[0] = temp;
-}
-  
-//Swapping if second element is smaller than the first
-if(ch[1] < ch[2])
-{
-char temp = ch[2];
-ch[2] = ch[1];
-ch[1] = temp;
-}
-}
-  
-//printing the result
-for(int i = 0; i < 3; i++)
-{
-printf("%c\t", ch[i]);
-}
-  
-  
 return 0;
 }
