@@ -5,7 +5,7 @@ main ()
   int a, c, i, j, k;
   char f, g, b, h;
   long long d, e, l, m;
-  a = 1;
+  a = i = 1;
   e = 1;
   b = 1;
   g = 1;
@@ -21,59 +21,65 @@ main ()
     {
       printf ("please enter the number \n");
       scanf ("%hhd", &f);
-      for (i = 1; i < f; i++)
+      while (i < f)
 	{
-	  g = g * (i + 1);
-	  b = b * i;
+	  g *= (i + 1);
+	  b *= i;
+	  i++;
 	  h = g / b;
 	}
       if (f != h)
 	{
 	  printf
-	    ("Sorry correctly calculate value of factorial of entered number with selected data type is not possible!!!!");
+	    ("Sorry The correct value of factorial for this number is not possible with this data type");
 	  return 0;
 	}
-
+      //   }
       printf ("The Factorial of %hhd is : %hhd", f, g);
+      return 0;
     }
 
 
   else if (c == 1)
     {
-      printf ("please enter the number \n");
+      printf ("Enter a Number to Find Factorial: ");
       scanf ("%d", &c);
-      for (i = 1; i < c; i++)
+      while (i < c)
 	{
-	  a = a * (i + 1);
-	  j = j * i;
+	  a *= (i + 1);
+	  j *= i;
+	  i++;
 	  k = a / j;
 	}
       if (c != k)
 	{
 	  printf
-	    ("Sorry correctly calculate value of factorial of entered number with selected data type is not possible!!!");
+	    ("Sorry The correct value of factorial for this number is not possible with this data type");
 	  return 0;
 	}
       printf ("The Factorial of %d is : %d", c, a);
+      return 0;
     }
   else if (c == 3)
     {
       printf ("please enter the number \n");
       scanf ("%lld", &d);
-      for (i = 1; i < d; i++)
+      while (i < d)
 	{
-	  e = e * (i + 1);
-	  l = l * i;
+	  e *= (i + 1);
+	  l *= i;
+	  i++;
 	  m = e / l;
 	}
       if (d != m)
 	{
 	  printf
-	    ("correctly calculate value of factorial of entered number with selected data type is not possible!!!");
+	    ("Sorry The correct value of factorial for this number is not possible with this data type");
 	  return 0;
 	}
 
       printf ("The Factorial of %lld is : %lld", d, e);
+      return 0;
     }
 
   return 0;
