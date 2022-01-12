@@ -1,38 +1,29 @@
-  #include<stdio.h>
+#include<stdio.h>
 #include<math.h>
-double my_arcsin(double x){
-double a,S;
-int k=0;
-a = (1.)*pow(x,2*k+1)/(pow(4,k)*(pow(1.,2))*(2*k+1));
-S=a;
-//printf("%.2f\t%8.2f\t%8.2f\n", x,a,S);
 
-while(k<500){
-	k++;
-	a = a*(k*(x*x)*(2*k-1)*(2*k-1))/(2*(k*k)*(2*k+1));
-	S = S + a;
-//	printf("%.2f\t%8.2f\t%8.2f\n", x,a,S);
-	}
-return S;
-}
 
-void main(){
-	double x, y, yy;
-printf("note:x<1");
-printf("enter the x-value:");
-scanf("%lf", &x);
-	y= asin(x);
-	printf("standard function arcsin - y= arcsin(%.2f)=%.2f\n",x,y);
-	yy= my_arcsin(x);
-	printf("user function - y= my_arcsin(%.2f)=%.2f\n",x,yy);
-printf("      500
-                _____
-                \ 
-                 \ 
-    arcsin(%.2f)= >   ____________-
-                 /
-                /____
-                  k=0 ")     
-    
-    
+int main(){
+	float a=0.01, b=1.5*M_PI, x, deltax=1.e-3/*0.001*/, funkca, funkcb, funkcx;
+    int k=0;
+
+    funkca= sin(a); funkcb= sin(b);
+    if(funkca*funkcb>0){
+        printf("interval[%.2f;%.2f] sin(x) function",a,b);
+        printf("no roots (or a pair of roots)\n" );
+        return 1;}
+
+printf("                 sin(%7.3f)=%7.3f\t\t\t\t",a,sin(a));
+printf("sin(%7.3f)=%7.3f\n",b,sin(b));
+
+while((b-a)>deltax){
+    k++;//k=k+1;//k+1;
+    x=(a+b)/2.;
+    if(funkca*sin(x)>0)//pie a=0->
+    a = x;
+    else
+    b = x;
+    printf("%2d. iteration: sin(%7.3f)=%7.3f\t",x,sin(x));
+    printf("sin(%7.3f)=%7.3f\n",b,sin(b));}
+    printf("The root is at x=%.3f, because sin(x) is %.3f\n",x,sin(x));
+    return 0;
 }
