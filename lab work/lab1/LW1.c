@@ -28,7 +28,7 @@ return S;
 void main(){
 	double x, y, yy;
 printf("arcsin calculation \n");
-printf("note:x<=1\n");
+printf("note:-1<=x<=1\n");
 printf("enter the x-value:\n");
 scanf("%lf", &x);
 	y= asin(x);
