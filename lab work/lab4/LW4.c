@@ -54,7 +54,7 @@ void main(){
   /* Perform integration by trapezoidal rule for different number of sub-intervals until they converge to the given accuracy:*/
   do{
     integral=integral_new;
-    i++;
+    i*=2;//i++;
     integral_new=trapezoidal(f,a,b,i);
   }while(fabs(integral_new-integral)>=eps);
  
@@ -87,7 +87,7 @@ Sintegral_new=simpsons(f,a,b,i);
   /* Perform integration by simpson's 1/3rd for different number of sub-intervals until they converge to the given accuracy:*/
   do{
     Sintegral=Sintegral_new;
-    i=i+2;
+    i*=2;//i=i+2;
     Sintegral_new=simpsons(f,a,b,i);
   }while(fabs(Sintegral_new-Sintegral)>=eps);
    
