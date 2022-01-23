@@ -14,11 +14,11 @@ main ()
   int k = 0;
   printf("note: a and b is >=-1 and <=1\n");
    printf("note: a < b \n");
-  printf("\nenter value of a:");
+  printf("\nenter initial value (a):");
   scanf("%f",&a);
-   printf("\nenter value of b:");
+   printf("\nenter final value (b):");
   scanf("%f",&b);
- printf("\nenter value of c:");
+ printf("\nenter value of c for equation f(x)=c:");
   scanf("%f",&c);
   printf("\nenter value of precision:");
   scanf("%f",&deltax);
@@ -49,7 +49,7 @@ main ()
       //printf ("sin(%7.3f)=%7.3f\n", b, asin (b));
 
     }
-  printf ("The root is at x=%.3f, and sin(x) when x=%.3f is %.3f\n", x, x, asin (x));
+  printf ("The root is at x=%.3f between a and b, and sin(x) when x=%.3f is %.3f\n", x, x, asin (x));
   printf ("the used number of iteration: %2d", k);
   return 0;
 }
