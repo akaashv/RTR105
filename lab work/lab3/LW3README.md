@@ -26,7 +26,10 @@ while(x<b){
 ![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab3/LW3results2.png)
 # the picture of gnuplot graph
 ![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab3/Lab3diffgnuplot.png)
-
-
+# the picture of 1st derivative graph from wolfram alpha:
+![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab3/LW3resultsw2.png)
+# the picture of 2nd derivative graph from wolfram alpha:
+![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab3/Lab3diffgnuplot.png)
+we can verify that code is giving correct values by compring with wolfram alpha
 
 
