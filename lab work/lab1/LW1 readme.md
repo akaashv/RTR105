@@ -24,7 +24,7 @@ printf("a499=\t%E S499=\t%8.2f\n",a,S);
 ![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab1/LW1%20results.png)
 
 # the picture of gnuplot graph
-
+![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab1/lw1.png)
 
 
 
