@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<math.h>
 float
@@ -9,20 +10,29 @@ modified_arcsin (float x, float c)
 int
 main ()
 {
-  float a = -0.99, b = 0.99, c = 0.5, x, deltax =
-    1.e-3 /*0.001 */ , funkca, funkcb, funkcx;
+  float a , b, c , x, deltax /*0.001 */ , funkca, funkcb, funkcx;
   int k = 0;
-
+  printf("note: a and b is >=-1 and <=1\n");
+   printf("note: a < b \n");
+  printf("\nenter value of a:");
+  scanf("%f",&a);
+   printf("\nenter value of b:");
+  scanf("%f",&b);
+ printf("\nenter value of c:");
+  scanf("%f",&c);
+  printf("\nenter value of precision:");
+  scanf("%f",&deltax);
+  
   funkca = modified_arcsin (a, c);
   funkcb = modified_arcsin (b, c);
   if (funkca * funkcb > 0)
     {
       printf ("interval[%.2f;%.2f] sin(x) function", a, b);
-      printf ("no roots (or a pair of roots)\n");
+      printf ("\nno roots (or a pair of roots)\n");
       return 1;
     }
 
-  printf ("                 sin(%7.3f)=%7.3f\t\t\t\t", a, asin (a));
+  printf ("sin(%7.3f)=%7.3f\t\t\t", a, asin (a));
   printf ("sin(%7.3f)=%7.3f\n", b, asin (b));
 
   while ((b - a) > deltax)
@@ -33,11 +43,14 @@ main ()
 	a = x;
       else
 	b = x;
-      printf ("%2d. iteration: sin(%7.3f)=%7.3f\t", k, a, asin (a));
-      printf ("sin(%7.3f)=%7.3f\n", x, asin (x));
-      printf ("sin(%7.3f)=%7.3f\n", b, asin (b));
+	//each interation
+     // printf ("%2d. iteration: sin(%7.3f)=%7.3f\t", k, a, asin (a));
+      //printf ("sin(%7.3f)=%7.3f\n", x, asin (x));
+      //printf ("sin(%7.3f)=%7.3f\n", b, asin (b));
 
     }
-  printf ("The root is at x=%.3f, because sin(x) is %.3f\n", x, asin (x));
+  printf ("The root is at x=%.3f, and sin(x) when x=%.3f is %.3f\n", x, x, asin (x));
+  printf ("the used number of iteration: %2d", k);
   return 0;
 }
+
