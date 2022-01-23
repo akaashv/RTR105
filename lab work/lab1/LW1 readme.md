@@ -21,6 +21,12 @@ printf("a499=\t%E S499=\t%8.2f\n",a,S);
 
 ``` 
 # the  picture of result of code:
+![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab1/LW1%20results.png)
+
+# the picture of gnuplot graph
+
+
+
 
 
 
