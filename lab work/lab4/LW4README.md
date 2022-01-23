@@ -2,6 +2,10 @@
 In this lab we used rectangle rule,trapazoidal rule and simpson rule to make code to determine definite integral of my funtion arcsin(x), in the output of the code user enter interval values(a and b) and code outputs integral of arcsin(x) us each of the three method
 and for calcultion while and for loop was used and inside the loop rectangle rule,trapazoidal rule and simpson rule formula was entered, and the loop did the calculation and fabs was used to get the absolute value and in gnu plot the graph of of funtion and the area under the curve was plotted.
 
+I also reffered to: 
+https://www.cuemath.com/trapezoidal-rule-formula/ for trapezoidal rule
+https://atozmath.com/example/CONM/NumeInte.aspx?he=e&q=S13 for simpson rule
+
 the important part of the graph is the while and for loop doing rectangle rule,trapazoidal rule and simpson rule, which did the calculation and important parts are shown below:
 
 ``` 
