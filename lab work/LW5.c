@@ -100,7 +100,7 @@ if( n%2 == 0)
         }
      
      //symbol Sort
-
+int count=0;
 printf("\nSorted list of symbols in acending order:             ");
      for (c = 0; c < n; c++)
      printf(" '%c' ", array[c]);
@@ -113,6 +113,36 @@ printf("\nSorted list of coresponding ASCII value in acending order: ");
 printf("\nASCII values:");
 for (c = 0; c < n; c++)
      printf("\n '%c' = %d \n", array[c],array[c]);
+
+// frequency
+for(j=0;array[j];j++);
+	 n=j; 
+    
+	printf(" frequency of each character: \n");
+ 
+    for(i=0;i<n;i++)  
+    {
+     	count=1;
+    	if(array[i])
+    	{
+		
+ 		  for(j=i+1;j<n;j++)  
+	      {   
+	    	
+	        if(array[i]==array[j])
+    	    {
+                 count++;
+                 array[j]='\0';
+	     	}
+	      }  
+	      printf(" '%c' = %d \n",array[i],count);
+ 
+	       
+	   
+       }
+	   
+	   
+ 	} 
 
 
 
