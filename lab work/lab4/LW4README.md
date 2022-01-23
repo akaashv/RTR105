@@ -63,9 +63,9 @@ do{
 # the  picture of result of code:
 ![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab4/LW4%20results.png)
 
-# the picture of gnuplot graph
+# the picture of gnuplot graph from -1 to 1:
 ![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab4/Lab4intgnuplot.png)
 
-# the picture of 2nd derivative graph from wolfram alpha:
-![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab3/LW3resultsw1.png)
+# the picture of integral graph from -1 to 1 from wolfram alpha:
+![](https://github.com/akaashv/RTR105/blob/main/lab%20work/lab4/LW4resultsw.png)
 we can verify that code is giving correct values by compring with wolfram alpha
